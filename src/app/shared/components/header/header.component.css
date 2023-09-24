@@ -1,0 +1,59 @@
+nav{
+  background:linear-gradient(to right,rgb(236, 121, 14),rgb(148, 69, 17));
+  color:azure;
+
+}
+.content{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 0;
+
+}
+ul{
+  list-style: none;
+  display: flex;
+ gap: 20px;
+  width: 30%;
+  margin: 0;
+}
+
+  li{
+
+  cursor: pointer;
+  font-size: 22px;
+  color:azure;
+  text-decoration: none;
+
+}
+span{
+ display: flex;
+ gap: 3px;
+}
+.fas{
+font-size: 19px;
+padding-top: 6px;
+
+
+  color: rgb(233, 233, 160);
+}
+.bi-handbag-fill{
+  font-size: 19px;
+padding-top: 2px;
+
+
+  color: rgb(233, 233, 160);
+
+}
+li:hover{
+  cursor:pointer;
+}
+button{
+  background-color: white;
+ padding:10px;
+ margin-left: 10px;
+ color: rgb(238, 169, 79);
+ border-radius: 10px;
+ border:none;
+}
+

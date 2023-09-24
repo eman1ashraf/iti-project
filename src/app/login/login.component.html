@@ -1,0 +1,40 @@
+
+  <div  *ngIf="isSubmitted" class="alert alert-success text-center m-2">Submitted successfully!!</div>
+  <div class="main">
+
+  <form  [formGroup]="form" (ngSubmit)="onSubmit()" novalidate action="javascript: void(0);" id="login-form" class="login-form" autocomplete="off" role="main">
+    <h1 class="a11y-hidden">Login Form</h1>
+  <div>
+    <label class="label-email">
+      <input formControlName="email" type="email" class="text" name="email" placeholder="Email" tabindex="1" required />
+      <span class="required">Email</span>
+    </label>
+  </div>
+  <div>
+    <label class="label-password">
+      <input formControlName="password"  type="password" class="text" name="password" placeholder="Password" tabindex="2" required />
+      <span class="required">Password</span>
+    </label>
+  </div>
+  <input  [disabled]="!form.valid" type="submit" value="Log In" />
+  <div class="email">
+    <a href="#">Forgot password?</a>
+  </div>
+  <figure aria-hidden="true">
+    <div class="person-body"></div>
+    <div class="neck skin"></div>
+    <div class="head skin">
+      <div class="eyes"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="hair"></div>
+    <div class="ears"></div>
+    <div class="shirt-1"></div>
+    <div class="shirt-2"></div>
+  </figure>
+</form>
+
+  </div>
+
+
+

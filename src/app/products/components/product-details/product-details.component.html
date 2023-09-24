@@ -1,0 +1,96 @@
+<!-- <div class="box">
+  <div class="row" *ngIf="!loading">
+    <div class="col-md-5 col-sm-12">
+      <img src="{{data.image}}" alt="">
+    </div>
+    <div class="col-md-5 col-sm-12">
+      <div class="info">
+        <ul class="list-unstyled">
+          <li><strong>Title:</strong>{{data.title}}</li>
+          <li><strong>Category:</strong>{{data.category}}</li>
+          <li><strong>Description:</strong>{{data.description}}</li>
+          <li><strong>Rate:</strong>{{data.rating.rate}}</li>
+          <li><strong>Count:</strong>{{data.rating.count}}</li>
+          <li><strong>Price:</strong>{{data.price}} l.E</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="text-center">
+    <app-spinner *ngIf="loading"></app-spinner>
+  </div>
+  </div> -->
+  <!-- <main *ngIf="!loading">
+    <div class="card">
+      <div class="card__title">
+
+      </div>
+      <div class="card__body">
+        <div class="half">
+          <div class="featured_text">
+            <h1>{{data.title}}</h1>
+            <p class="sub">{{data.category}}</p>
+            <p class="price">${{data.price}}</p>
+          </div>
+          <div class="image">
+            <img src="{{data.image}}" alt="">
+          </div>
+        </div>
+        <div class="half">
+          <div class="description">
+            <p>{{data.description}}</p>
+          </div>
+          <span class="stock"><i class="fa fa-pen"></i> In stock</span>
+          <div class="reviews">
+            <ul class="stars">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <span>({{data.rating.rate}} reviews)</span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="text-center">
+      <app-spinner *ngIf="loading"></app-spinner>
+    </div>
+  </main> -->
+
+
+
+  <body>
+    <div class="wrapper">
+      <app-spinner *ngIf="loading"></app-spinner>
+      <div class="div4">
+      <div class="product-img">
+        <img src="{{data.image}}" height="420" width="327">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1>{{data.title}}</h1>
+          <h2>{{data.category}}</h2>
+          <p>{{data.description}} </p>
+
+
+          <div class="product-price-btn">
+
+            <p><span>{{data.price}}</span>$</p>
+
+
+          </div>
+      </div>
+    </div>
+    </div>
+      <div class="text-center">
+        <app-spinner *ngIf="loading"></app-spinner>
+      </div>
+    </div>
+  </body>
+
