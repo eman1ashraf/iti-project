@@ -1,35 +1,39 @@
 nav{
   background:linear-gradient(to right,rgb(236, 121, 14),rgb(148, 69, 17));
-  color:azure;
+  color:azure !important;
 
 }
-.content{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:10px 0;
 
-}
 ul{
   list-style: none;
-  display: flex;
- gap: 20px;
-  width: 30%;
-  margin: 0;
-}
 
-  li{
-
-  cursor: pointer;
-  font-size: 22px;
-  color:azure;
-  text-decoration: none;
 
 }
 span{
- display: flex;
- gap: 3px;
+  color: aliceblue!important;
+  font-size: larger;
+  font-size: 30px;
+
+
 }
+li {
+
+  cursor: pointer;
+
+  color: azure !important;
+  text-decoration: none;
+margin-top: 6px;
+
+}
+  li a{
+
+  cursor: pointer;
+  font-size: 22px;
+  color: azure !important;
+  text-decoration: none;
+
+}
+
 .fas{
 font-size: 19px;
 padding-top: 6px;
@@ -42,18 +46,19 @@ padding-top: 6px;
 padding-top: 2px;
 
 
-  color: rgb(233, 233, 160);
+  color: rgb(233, 233, 160)!important;
 
 }
 li:hover{
   cursor:pointer;
 }
-button{
+.btn{
   background-color: white;
  padding:10px;
  margin-left: 10px;
- color: rgb(238, 169, 79);
+ color: rgb(238, 169, 79) !important;
  border-radius: 10px;
  border:none;
+
 }
 
