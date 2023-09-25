@@ -1,20 +1,21 @@
 <nav>
   <div class="container">
-    <div class="content">
-     <h2 class="logo"> <i class="bi bi-shop"></i> Online Store</h2>
-      <ul>
-        <span>  <li routerLink="/products">Products </li></span>
-       <span> <li routerLink="/cart" >Cart </li></span>
-       <span> <li routerLink="/adminproduct">  Admin</li></span>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
 
+        <span   class="logo"><i class="bi bi-shop"> </i>Online Store</span>
+      </a>
 
+      <ul class="nav nav-pills">
+
+        <li class="nav-item"> <a  class="nav-link" routerLink="/products">Products </a></li>
+        <li class="nav-item"><a  class="nav-link" routerLink="/cart" >Cart</a></li>
+        <li class="nav-item"><a  class="nav-link" routerLink="/adminproduct">  Admin</a></li>
+        <li class="nav-item" class="btn" routerLink="/login">login</li>
+        <li class="nav-item" class="btn" (click)="logout()">logout</li>
       </ul>
-      <div>
-        <button routerLink="/login">login</button>
-        <button  (click)="logout()">logout</button>
-
-      </div>
-    </div>
-
+    </header>
   </div>
+
 </nav>
+
